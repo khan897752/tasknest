@@ -1,5 +1,7 @@
 # 🧱 TaskNest — Freelance Micro-Task Platform 🚀
 
+![TaskNest Demo](tasknest-demo.gif)
+
 TaskNest is a full-stack Java web application built using *Java Servlets, JSP, JDBC, and MySQL*.  
 It’s a role-based platform where *Clients* can post projects, *Freelancers* can apply, and *Admins* can manage everything.
 
