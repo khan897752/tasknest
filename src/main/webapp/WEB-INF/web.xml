@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd https://jakarta.ee/xml/ns/jakartaee http://xmlns.jcp.org/xml/ns/javaee" id="WebApp_ID" version="2.4">
+  <display-name>TaskNest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>SendMessageServlet</servlet-name>
+    <servlet-class>com.tasknest.controller.SendMessageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendMessageServlet</servlet-name>
+    <url-pattern>/SendMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UploadProfilePicServlet</servlet-name>
+    <servlet-class>com.tasknest.controller.UploadProfilePicServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadProfilePicServlet</servlet-name>
+    <url-pattern>/UploadProfilePicServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SaveProfileServlet</servlet-name>
+    <servlet-class>com.tasknest.controller.SaveProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveProfileServlet</servlet-name>
+    <url-pattern>/SaveProfileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SaveProjectServlet</servlet-name>
+    <servlet-class>com.tasknest.controller.SaveProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveProjectServlet</servlet-name>
+    <url-pattern>/SaveProjectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UnsaveProjectServlet</servlet-name>
+    <servlet-class>com.tasknest.controller.UnsaveProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UnsaveProjectServlet</servlet-name>
+    <url-pattern>/UnsaveProjectServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.tasknest.controller.AdminLoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/AdminLoginServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <servlet-class>com.tasknest.controller.DeleteUserServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <url-pattern>/DeleteUserServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.tasknest.controller.LogoutServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>ContactServlet</servlet-name>
+  <servlet-class>com.tasknest.controller.ContactServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ContactServlet</servlet-name>
+  <url-pattern>/ContactServlet</url-pattern>
+</servlet-mapping>
+</web-app>

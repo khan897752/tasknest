@@ -1,0 +1,89 @@
+/* 🌐 Global Reset */
+* {
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #9b5de5, #f15bb5, #fcbf49);
+  color: #fff;
+}
+
+/* 🧭 Admin Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+.navbar .nav-links a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar .nav-links a:hover {
+  color: #ffd6e0;
+}
+
+/* 🧩 Dashboard Section */
+.dashboard {
+  padding: 60px 40px;
+}
+.dashboard h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.dashboard p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* 📦 Admin Cards */
+.admin-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 20px;
+  width: 280px;
+  color: #fff;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  animation: fadeSlide 1s ease-out forwards;
+  opacity: 0;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+}
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 14px;
+  color: #ffd6e0;
+}
+
+/* ✨ Animation */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

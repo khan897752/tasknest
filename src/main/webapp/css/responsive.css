@@ -1,0 +1,271 @@
+/* 🧱 Base Reset */
+* {
+  box-sizing: border-box;
+}
+body, html {
+  overflow-x: hidden;
+}
+
+/* 📱 Mobile: up to 480px */
+@media (max-width: 480px) {
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+  p, input, .btn { font-size: 14px; }
+
+  .navbar {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px !important;
+    width: 100% !important;
+  }
+
+  .navbar nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 10px !important;
+  }
+
+  .navbar nav a {
+    margin: 8px 0 !important;
+  }
+
+  .nav-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+
+  .nav-buttons .btn {
+    margin: 5px 0 !important;
+    width: 100% !important;
+    max-width: 200px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  .hero, .signup-wrapper, .features, .role-cards, .testimonials {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 20px !important;
+  }
+
+  .hero-left, .hero-right {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero-left h1 {
+    font-size: 28px !important;
+  }
+
+  .hero-left p {
+    font-size: 16px !important;
+  }
+
+  .hero-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .hero-buttons .btn {
+    width: 100% !important;
+    padding: 12px !important;
+  }
+
+  .hero-right img, .signup-hero img {
+    width: 90% !important;
+    max-width: 300px !important;
+    margin-top: 30px;
+  }
+
+  .feature-card, .role-card, .testimonial {
+    width: 90% !important;
+    margin-bottom: 20px;
+  }
+
+  .signup-form-section, .signup-hero {
+    padding: 20px !important;
+  }
+
+  .cta h2 {
+    font-size: 24px !important;
+  }
+
+  .cta-btn {
+    font-size: 14px !important;
+    padding: 10px 20px !important;
+  }
+
+  footer {
+    padding: 20px !important;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+/* 📲 Tablet: 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+  p, input, .btn { font-size: 15px; }
+
+  .navbar {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px !important;
+    width: 100% !important;
+  }
+
+  .navbar nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 10px !important;
+  }
+
+  .navbar nav a {
+    margin: 8px 0 !important;
+  }
+
+  .nav-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+
+  .nav-buttons .btn {
+    margin: 5px 0 !important;
+    width: 100% !important;
+    max-width: 200px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  .hero, .signup-wrapper, .features, .role-cards, .testimonials {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 30px !important;
+  }
+
+  .hero-left, .hero-right {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero-right img, .signup-hero img {
+    width: 80% !important;
+    max-width: 300px !important;
+    margin-top: 30px;
+  }
+
+  .feature-card, .role-card, .testimonial {
+    width: 80% !important;
+    margin-bottom: 20px;
+  }
+}
+
+/* 💻 Small Desktop: 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 { font-size: 32px; }
+  h2 { font-size: 26px; }
+  p, input, .btn { font-size: 16px; }
+
+  .hero, .signup-wrapper {
+    flex-direction: row;
+    padding: 40px;
+  }
+
+  .hero-left, .hero-right {
+    width: 50%;
+  }
+
+  .hero-right img, .signup-hero img {
+    width: 70%;
+    max-width: 350px;
+  }
+
+  .feature-card, .role-card, .testimonial {
+    width: 250px;
+  }
+}
+
+/* 🖥️ Large Desktop: above 1024px */
+@media (min-width: 1025px) {
+  h1 { font-size: 36px; }
+  h2 { font-size: 28px; }
+  p, input, .btn { font-size: 18px; }
+
+  .hero, .signup-wrapper {
+    flex-direction: row;
+    padding: 60px;
+  }
+
+  .hero-left, .hero-right {
+    width: 50%;
+  }
+
+  .hero-right img, .signup-hero img {
+    width: 400px;
+  }
+
+  .feature-card, .role-card, .testimonial {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-wrapper {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .signup-hero, .signup-form-section {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .signup-form-section {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .signup-wrapper {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .signup-hero, .signup-form-section {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .signup-form-section {
+    margin-top: 30px;
+  }
+
+  .signup-hero img {
+    max-width: 300px;
+  }
+
+  .signup-form-section h3 {
+    font-size: 24px;
+  }
+}

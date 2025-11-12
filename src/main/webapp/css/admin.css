@@ -1,0 +1,99 @@
+/* 🌐 Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #9b5de5, #f15bb5, #fcbf49);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🧭 Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav-links a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-links a:hover {
+    color: #ffd6e0;
+}
+
+/* 📋 Dashboard Section */
+.dashboard {
+    padding: 60px 40px;
+}
+.dashboard h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* 📊 User Table */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.2); /* Darker base for better contrast */
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.user-table th, .user-table td {
+    padding: 16px 20px;
+    text-align: left;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.user-table th {
+    background: rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+}
+.user-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+.user-table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* 🗑️ Delete Button */
+.delete-btn {
+    background: #fff;
+    color: #e63946;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.delete-btn:hover {
+    background: #ffd6e0;
+    color: #000;
+}
+
+.alert-card {
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 500;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.alert-card.success {
+    background: rgba(0, 255, 0, 0.2);
+    color: #fff;
+}
+.alert-card.error {
+    background: rgba(255, 0, 0, 0.2);
+    color: #fff;
+}

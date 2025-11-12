@@ -1,0 +1,16 @@
+# Hide config file
+config.properties
+
+# Ignore class files
+*.class
+
+# Ignore Eclipse files
+.classpath
+.project
+.settings/
+bin/
+target/
+
+# Ignore system junk
+.DS_Store
+Thumbs.db

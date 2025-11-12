@@ -1,0 +1,52 @@
+
+/* 📣 Call to Action */
+.cta {
+  text-align: center;
+  padding: 80px 40px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.cta h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #9b5de5;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #ffd6e0;
+  color: #000;
+}
+
+/* 🧱 Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #ffd6e0;
+}
